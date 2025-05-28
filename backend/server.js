@@ -14,7 +14,9 @@ import connectCloudinary from "./cloudnary.js";
 
 
 const app = express();
-// app.use(cors());
+app.use(cors({
+  origin: 'https://lost-n-found-taupe.vercel.app'
+}));
 const uri = process.env.MONGO_CONN;
 mongoose.connect(uri)
   .then(() => console.log("Connected"))
