@@ -68,10 +68,10 @@ function Details({token, setToken}) {
 
               <div className="action-container">
                 <a href={`tel:${item.phoneno}`}>
-                  <CallIcon /> Call
+                  <CallIcon /> Call: {item.phoneno}
                 </a>
                 <a href={`mailto:${item.email}`}>
-                  <EmailIcon /> Email
+                  <EmailIcon /> Email: {item.email}
                 </a>
               </div>
 

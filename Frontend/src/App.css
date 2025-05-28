@@ -418,6 +418,8 @@ width: 500px;
 }
 .details-card .action-container{
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 100%;
     justify-content: center;
     /* background-color: red; */

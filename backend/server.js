@@ -15,7 +15,7 @@ import connectCloudinary from "./cloudnary.js";
 
 const app = express();
 app.use(cors({
-  origin: 'https://lost-n-found-taupe.vercel.app'
+  origin: ['https://lost-n-found-taupe.vercel.app',"http://localhost:3000"],
 }));
 const uri = process.env.MONGO_CONN;
 mongoose.connect(uri)
