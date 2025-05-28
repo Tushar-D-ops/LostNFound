@@ -1,0 +1,136 @@
+.auth-main-container {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, #04b2fd 0%, #0e0e0e 30%, #000 60%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  transition: background 0.5s ease-in-out;
+}
+
+.auth-container {
+  background-color: #08a5de;
+  padding: 40px 30px;
+  width: 360px;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+.auth-container h2 {
+  margin-bottom: 24px;
+  color: #111;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fefefe;
+  transition: all 0.2s ease;
+}
+
+.auth-container input:focus {
+  outline: none;
+  border-color: #04b2fd;
+  box-shadow: 0 0 6px rgba(4, 178, 253, 0.4);
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  border: none;
+  background: #097aaa;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.auth-container button:hover {
+  background: #035c82;
+  transform: scale(1.02);
+}
+
+.auth-container button:active {
+  transform: scale(0.98);
+}
+
+.toggle-link {
+  margin-top: 18px;
+  display: inline-block;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.toggle-link:hover {
+  color: #212121;
+  text-decoration: underline;
+}
+
+.pink-gradient {
+    position: absolute;
+    z-index: -3;
+    left: 20%;
+    top: 20%;
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    background: radial-gradient(circle,  #3f0d63 10%,   
+        #5e1a94 50%,   
+        #1f0f2e 90% );
+    filter: blur(200px) opacity(80%);
+    transition: all 0.5s ease-in-out;
+}
+
+
+.white-gradient {
+    position: absolute;
+    z-index: -3;
+    left: 30%;
+    bottom: -10%;
+    width: 40%;
+    height: 40%;
+    border-radius: 0%;
+    background: radial-gradient(circle,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(100, 100, 150, 0.15) 50%,
+        rgba(30, 30, 40, 0.2) 100%);
+    filter: blur(100px) opacity(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+
+.blue-gradient {
+    position: absolute;
+    z-index: -3;
+    right: 20%;
+    top: 30%;
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    background: radial-gradient(circle, #5679ed 10%, #214d76 50%, #0f3057 90%);
+    filter: blur(200px) opacity(100%);
+    transition: all 0.5s ease-in-out;
+}
