@@ -12,17 +12,19 @@ import itemRouter from "./itemRoute.js";
 import connectCloudinary from "./cloudnary.js";
 
 
-const uri = process.env.MONGO_CONN;
 
+const app = express();
+app.use(cors());
+const uri = process.env.MONGO_CONN;
 mongoose.connect(uri)
   .then(() => console.log("Connected"))
   .catch(err => console.error("MongoDB Connection Error:", err));
 
-const app = express();
-app.use(cors());
-app.use(express.json()); 
+
+
 
 connectCloudinary()
+app.use(express.json()); 
 
 // app.use("/files", express.static("files"));
 
@@ -134,6 +136,7 @@ app.use((err, req, res, next) => {
 });
 
 
+app.get("/",req,res=>{res.send("hello")})
 
 const PORT = process.env.PORT || 8080;
 app.listen(8080, () => {
